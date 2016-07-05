@@ -1,4 +1,6 @@
 import random
+import datetime
+startTime = datetime.datetime.now()
 arr = []
 for i in range(100):
 	arr.append(random.randint(0,10000))
@@ -12,8 +14,9 @@ def bubbleSorting(x):
 	print x
 bubbleSorting(arr)
 
+print "This program took", datetime.datetime.now() - startTime, "to run"
 
-#take array
+#randomly generate list array
 #check first against next number
 #if first number, swap first with next
 #check next number
